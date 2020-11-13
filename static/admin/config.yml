@@ -11,8 +11,8 @@ public_folder: img/uploads
 
 collections:
   - name: "posts"
-    label: "Posts"
-    folder: "posts/"
+    label: "posts"
+    folder: "content/posts"
     create: true
     fields:
       - { label: "Title", name: "title", widget: "string" }
@@ -20,12 +20,12 @@ collections:
       - { label: "Body", name: "body", widget: "markdown" }
 
   - name: "aboutme"
-    label: "About"
+    label: "About me"
     create: true
     files:
       - label: "About page"
         name: "about"
-        file: "about.md"
+        file: "content/about.md"
         fields:
           - { label: "Title", name: "title", widget: "string" }
           - { label: "Date", name: "date", widget: "date" }
