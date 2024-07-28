@@ -1,4 +1,4 @@
-baseurl = "http://dev.gozyra.io" # Hostname (and path) to the root.
+baseurl = "https://dev.gozyra.io" # Hostname (and path) to the root.
 title = "Mohamed Amer" # Site title.
 theme = "hugo-coder" # Set the theme.
 languagecode = "en" # The site’s language code used to generate RSS.
