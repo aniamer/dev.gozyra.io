@@ -1,93 +1,92 @@
 baseurl = "https://dev.gozyra.io" # Hostname (and path) to the root.
-title = "Mohamed Amer" # Site title.
-theme = "hugo-coder" # Set the theme.
-languagecode = "en" # The site’s language code used to generate RSS.
-defaultcontentlanguage = "en" # The default content language.
+title = "Ani Amer"                # Site title.
+theme = "hugo-coder"              # Set the theme.
+languagecode = "en"               # The site’s language code used to generate RSS.
+defaultcontentlanguage = "en"     # The default content language.
 
 paginate = 20 # Default number of pages per page in pagination.
 
-pygmentsstyle = "b2" # Color-theme or style for syntax highlighting.
-pygmentscodefences = true # Enable code fence background highlighting.
+pygmentsstyle = "b2"                 # Color-theme or style for syntax highlighting.
+pygmentscodefences = true            # Enable code fence background highlighting.
 pygmentscodefencesguesssyntax = true # Enable syntax guessing for code fences without specified language.
-pygmentsUseClasses = true # new add
+pygmentsUseClasses = true            # new add
 
 disqusShortname = "dev-gozyra-io" # Enable or disable Disqus.
 
 [params] # theme parameters
-    author = "Mohamed Amer" # Author's name.
-    info = "Software Engineer" # Author's job title or info.
-    description = "Mohamed Amer's personal website" # Site description.
-    keywords = "blog,developer,personal" # Site keywords.
-    avatarurl = "images/mo.avatar" # Contain the path of the optionnal avatar in the static folder.
+author = "Ani Amer"                         # Author's name.
+info = "Software Engineer"                  # Author's job title or info.
+description = "Ani Amer's personal website" # Site description.
+keywords = "blog,developer,personal"        # Site keywords.
+avatarurl = "images/mo.avatar"              # Contain the path of the optionnal avatar in the static folder.
 
-    #footercontent = "Enter a text here." # Add footer content
-    fixedbarContent = "Do you want to know me more private?→" # Add fixedbar content
-    fixedbarContentAfter = "Thank You! Please share it if you like it→" # Add fixedbar content after click
+#footercontent = "Enter a text here." # Add footer content
+fixedbarContent = "Do you want to know me more private?→"           # Add fixedbar content
+fixedbarContentAfter = "Thank You! Please share it if you like it→" # Add fixedbar content after click
 
-    # Whether you want to hide copyright and credits in the footer.
-    hideCredits = false
-    hideCopyright = false
+# Whether you want to hide copyright and credits in the footer.
+hideCredits = false
+hideCopyright = false
 
-    # Custom CSS
-    custom_css = []
+# Custom CSS
+custom_css = []
 
-    # Alignment of Mobile Menu items
-    itemscentered = true
+# Alignment of Mobile Menu items
+itemscentered = true
 
-    # RTL support
-    rtl = false
+# RTL support
+rtl = false
 
-    # Bottom sns share
-    snsShare = true # new add
-    # Popular sns share
-    # if you want add sns. please message!
-    enableTwitterShare = true  # new add
-    enableFacebookShare = true # new add
-    #enableHatenaShare = true   # new add
-    #enableLineShare = true     # new add
+# Bottom sns share
+snsShare = true # new add
+# Popular sns share
+# if you want add sns. please message!
+enableTwitterShare = true  # new add
+enableFacebookShare = true # new add
+#enableHatenaShare = true   # new add
+#enableLineShare = true     # new add
 
-    thumbnail = "images/tn.png" # default sns thumbnail
+thumbnail = "images/tn.png" # default sns thumbnail
 
-    # Multilanguage mode
-    langseparator = "|" # Separates menus from language selectors when site is multilingual.
+# Multilanguage mode
+langseparator = "|" # Separates menus from language selectors when site is multilingual.
 
 # Social links
 [[params.social]]
-    name = "Github"
-    icon = "fab fa-github fa-2x"
-    weight = 2
-    url = "https://github.com/mohamedamer/"
+name = "Github"
+icon = "fab fa-github fa-2x"
+weight = 2
+url = "https://github.com/aniamer/"
 [[params.social]]
-    name = "Twitter"
-    icon = "fab fa-twitter fa-2x"
-    weight = 3
-    url = "https://twitter.com/Gozyra"
+name = "Twitter"
+icon = "fab fa-twitter fa-2x"
+weight = 3
+url = "https://twitter.com/Gozyra"
 [[params.social]]
-    name = "LinkedIn"
-    icon = "fab fa-linkedin fa-2x"
-    weight = 1
-    url = "https://www.linkedin.com/in/msayamer/"
+name = "LinkedIn"
+icon = "fab fa-linkedin fa-2x"
+weight = 1
+url = "https://www.linkedin.com/in/msayamer/"
 
 # Menu links
 [[menu.main]]
-    name = "Blog"
-    weight = 1
-    url  = "/posts"
+name = "Blog"
+weight = 1
+url = "/posts"
 [[menu.main]]
-    name = "About"
-    weight = 2
-    url = "/about"
+name = "About"
+weight = 2
+url = "/about"
 
 [deployment]
-   # By default, files are uploaded in an arbitrary order.
-   # Files that match the regular expressions in the "Order" list
-   # will be uploaded first, in the listed order.
-   order = [".jpg$",".png$",".gif$",".css$",".js$"]
+# By default, files are uploaded in an arbitrary order.
+# Files that match the regular expressions in the "Order" list
+# will be uploaded first, in the listed order.
+order = [".jpg$", ".png$", ".gif$", ".css$", ".js$"]
 
 [[deployment.targets]]
 # An arbitrary name for this target.
 name = "gozyra.io"
 # The Go Cloud Development Kit URL to deploy to. Examples:
 # GCS; see https://gocloud.dev/howto/blob/#gcs
- URL = "gs://dev.gozyra.io"
-
+URL = "gs://dev.gozyra.io"
