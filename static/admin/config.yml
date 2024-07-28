@@ -1,0 +1,27 @@
+backend:
+  name: github
+  repo: mohamedamer/dev.gozyra.io
+
+publish_mode: editorial_workflow
+
+media_folder: static/img/
+public_folder: img/uploads
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Body", name: "body", widget: "markdown" }
+
+  - name: "aboutme"
+    label: "About"
+    folder: "content/about.md"
+    create: true
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Date", name: "date", widget: "date" }
+      - { label: "Body", name: "body", widget: "markdown" }
