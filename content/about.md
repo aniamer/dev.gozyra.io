@@ -1,5 +1,5 @@
 +++ 
-title= "About Me" 
+title= "About" 
 date = 2019-08-04 
 slug = "about"
 +++
