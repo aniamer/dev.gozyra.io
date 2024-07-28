@@ -2,7 +2,7 @@
 # https://github.com/firebase/firebase-tools
 
 name: Deploy to Firebase Hosting on merge
-'on':
+"on":
   push:
     branches:
       - master
@@ -15,14 +15,15 @@ jobs:
       - name: Checkout submodules
         run: git submodule update --init --recursive
 
-      - uses: peaceiris/actions-hugo@v2
+      - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "latest"
+          extended: true
 
       - run: hugo --minify
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
-          repoToken: '${{ secrets.GITHUB_TOKEN }}'
-          firebaseServiceAccount: '${{ secrets.FIREBASE_SERVICE_ACCOUNT_STORE_49 }}'
+          repoToken: "${{ secrets.GITHUB_TOKEN }}"
+          firebaseServiceAccount: "${{ secrets.FIREBASE_SERVICE_ACCOUNT_STORE_49 }}"
           channelId: live
           projectId: store-49
