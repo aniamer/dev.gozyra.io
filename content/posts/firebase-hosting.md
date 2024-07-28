@@ -1,6 +1,6 @@
 ---
 title: "Hosting your Hugo static website on Firebase"
-date: 2022-12-15
+date: 2024-07-28
 draft: false
 ---
 ## Deploying a Hugo static website on Firebase
@@ -24,9 +24,10 @@ jobs:
       - name: Checkout submodules
         run: git submodule update --init --recursive
 
-      - uses: peaceiris/actions-hugo@v2
+      - uses: peaceiris/actions-hugo@v3
         with:
           hugo-version: "latest"
+          extended: true
 
       - run: hugo --minify
       - uses: FirebaseExtended/action-hosting-deploy@v0
@@ -38,4 +39,3 @@ jobs:
 ```
 
 This will deploy the website on merging to master. if you want to do other CI tasks to do static checks create another pipeline and use `on: pull_request` instead. Commit the github action. At this point you'll probably have a different Host name configurations in your `config.toml` and what is configured on Firebase which will be something like `$PROJECT_ID.web.app` to fix that you'll need to use your desired/existing domain name with you Firebase hosting deployment following [Custom host setup](https://firebase.google.com/docs/hosting/custom-domain). Now you have a working CI/CD setup and serving your static website securely over HTTPS.
-
