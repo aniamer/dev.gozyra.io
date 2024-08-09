@@ -1,0 +1,22 @@
+{{ define "title" }} {{ .Title }} · {{ .Site.Title }} {{ end }} {{ define
+"content" }}
+<section class="container list">
+    <link href="/pagefind/pagefind-ui.css" rel="stylesheet" />
+    <script src="/pagefind/pagefind-ui.js"></script>
+    <script>
+        window.addEventListener("DOMContentLoaded", (event) => {
+            new PagefindUI({ element: "#search", showSubResults: true });
+        });
+    </script>
+    <h1 class="title">{{ .Title }}</h1>
+
+    <ul>
+        <li class="navigation-item">
+            <div id="search"></div>
+        </li>
+        {{- range .Paginator.Pages -}} {{- .Render "li" -}} {{- end -}}
+    </ul>
+
+    {{ partial "pagination.html" . }}
+</section>
+{{ end }}
