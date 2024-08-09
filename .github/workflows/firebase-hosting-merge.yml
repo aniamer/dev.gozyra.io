@@ -21,6 +21,10 @@ jobs:
           extended: true
 
       - run: hugo --minify
+
+      - name: Index pagefind
+        run: npx pagefind --source "public"
+
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: "${{ secrets.GITHUB_TOKEN }}"
