@@ -23,7 +23,7 @@ jobs:
       - run: hugo --minify
 
       - name: Index pagefind
-        run: npx pagefind --source "public"
+        run: npx pagefind --site "public"
 
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
