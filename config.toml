@@ -4,7 +4,7 @@ theme = "hugo-coder"              # Set the theme.
 languagecode = "en"               # The site’s language code used to generate RSS.
 defaultcontentlanguage = "en"     # The default content language.
 
-paginate = 20 # Default number of pages per page in pagination.
+pagination.pagerSize = 20 # Default number of pages per page in pagination.
 
 pygmentsstyle = "b2"                 # Color-theme or style for syntax highlighting.
 pygmentscodefences = true            # Enable code fence background highlighting.
