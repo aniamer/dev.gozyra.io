@@ -1,5 +1,15 @@
 {
   "projects": {
-    "dev-gozyra-io": "store-49"
-  }
+    "default": "store-49"
+  },
+  "targets": {
+    "store-49": {
+      "hosting": {
+        "gozyra": [
+          "dev-gozyra-io"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
