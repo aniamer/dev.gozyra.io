@@ -10,7 +10,7 @@ slug: about
 
 ---
 
-### **Executive Profile**
+### **Me**
 Senior Software Engineer and Cloud Architect with **20 years of experience** specializing in high-throughput distributed systems, modern platform infrastructure, and large-scale data engineering. Proven track record delivering critical business infrastructure for market leaders including **Spotify, IKEA, and Tink**. Expert at bridging the gap between raw backend application code (Go, Scala, Java) and cloud-native infrastructure automation (GCP, AWS, Terraform, Kubernetes). Available for immediate independent contract engagements across Sweden.
 
 ### **Core Competencies & Tech Stack**
