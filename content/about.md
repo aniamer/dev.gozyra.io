@@ -3,7 +3,6 @@ title: About
 date: 2025-11-27
 slug: about
 ---
-# **Ani Amer**
 **Senior Cloud Architect & Lead Platform/Data Engineer (Freelance)**  
 **Location:** Stockholm, Sweden | **Phone:** +46 709497735 | **Email:** mo@gozyra.com  
 **GitHub:** [github.com/aniamer](https://github.com/aniamer) | **LinkedIn:** [linkedin.com/in/msayamer](https://www.linkedin.com/in/msayamer)
